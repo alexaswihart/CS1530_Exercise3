@@ -1,7 +1,8 @@
 import org.junit.Test;
 import static org.junit.Asser.*;
+import static org.junit.Assert.*;
 
-import ex3.exercise3;
+import exercise3;
 
 public class exercise3test.java {
     
@@ -19,4 +20,23 @@ public class exercise3test.java {
     public void testLazyCaterer2() {
         assertEquals(exercise3.lazyCaterer(5), 16);
     }
+}
+
+
+public class TriTest {
+
+  @Test
+  public void testTri0(){
+    assertEquals(exercise3.triangle(0), 0);
+  }
+
+  @Test
+  public void testTri1(){
+    assertEquals(exercise3.triangle(0), 1);
+  }
+
+  @Test
+  public void testTri10(){
+    assertEquals(exercise3.triangle(10), 55);
+  }
 }
