@@ -1,4 +1,4 @@
-
+package exercise;
 import java.lang.Math;
 
 public class exercise3 {
@@ -13,6 +13,7 @@ public class exercise3 {
         
         System.out.println("triangle(" + n + ") = " + triangle(n));
         System.out.println("lazyCaterer(" + n + ") = " + lazyCaterer(n));
+        System.exit(0);
             
     }
     
