@@ -1,8 +1,19 @@
-import java.lang.math
+
+import java.lang.Math;
 
 public class exercise3 {
     public static void main(String[] args) {
+        if(args.length != 1)
+        {
+            System.out.println("Error: must have 1 argument");
+            System.exit(1);
+        }
         
+        int n = Integer.parseInt(args[0]);
+        
+        System.out.println("triangle(" + n + ") = " + triangle(n));
+        System.out.println("lazyCaterer(" + n + ") = " + lazyCaterer(n));
+            
     }
     
     public static int triangle(int n)
@@ -18,7 +29,7 @@ public class exercise3 {
     
     public static int lazyCaterer(int n)
     {
-        return (math.pow(n, 2) + n + 2)/2;
+        return (int)(Math.pow(n, 2) + n + 2)/2;
     }
     
     
